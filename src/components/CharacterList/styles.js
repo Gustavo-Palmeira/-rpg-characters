@@ -24,8 +24,19 @@ export const Card = styled(MuiCard)`
   &:hover {
     animation: ${scaleUp} 0.4s forwards;
   }
+
+  @media (max-width: 768px) {
+    width: 500px;
+    margin: auto;
+  }
+
+  @media (max-width: 520px) {
+    width: 300px;
+    margin: auto;
+  }
 `
 
 export const CardContent = styled(MuiCardCOntent)`
   padding: 12px;
+  min-height: 140px;
 `
